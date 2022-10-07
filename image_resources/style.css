@@ -1,0 +1,466 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+.text-primary {
+  color: #2b82a1;
+}
+
+.text-scondary {
+  color: #eb9004;
+}
+
+body{
+  font-family: 'Open Sans';
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px, 0;
+}
+
+img {
+  width: 100%;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+  transition: 0.5s;
+}
+
+#read-more {
+  transition: 0.3s;
+}
+
+.navbar a {
+  color: white;
+  padding: 10px 20px;
+  transition-duration: 0.3s;
+}
+
+.navbar a:hover {
+  border-bottom: #2b82a1 2px solid;
+  background-color: #222;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .logo {
+  font-weight: 400;
+}
+
+
+.navbar.top {
+  background: transparent;
+}
+
+
+.hero {
+  background: url('./banner.png') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.hero .content h1 {
+  font-size: 56px;
+}
+
+.hero .content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+
+.hero .content .btn {
+  position: absolute;
+  bottom: 190px;
+}
+
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.1);
+}
+
+.hero * {
+  z-index: 10;
+}
+
+.hero.blog {
+  background: url('/home/blog.jpg') no-repeat center center/cover;
+  height: 30vh;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #216f33;
+}
+
+.btn-primary, .bg-primary{
+  background-color: #2b82a1;
+  color: white;
+}
+
+.btn-secondary, .bg-secondary{
+  background-color: #eb9004;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #c47806;
+}
+
+.btn-dark, .bg-dark{
+  background-color: #333;
+  color: white;
+}
+
+.btn-dark:hover {
+  background-color: #111;
+  opacity: 0.9;
+  color: #f4f4f4;
+}
+
+.btn-light, .bg-light{
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.btn-light:hover {
+  background-color: rgb(211, 211, 211);
+  color: black;
+  opacity: 0.9;
+  
+}
+
+
+
+.btn-outline {
+  background: transparent ;
+  border: 1px solid white;
+  margin-left: 20px;
+}
+
+.icons {
+  padding: 30px;
+}
+
+.incons h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.icons i { 
+  background-color: #28a745;
+  color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.icons img { 
+  width: 100px;
+  height: 100px;
+  color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+
+.country a {
+  transition: 0.25s;
+}
+
+
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+}
+
+
+
+.flex-items > div {
+  padding: 20px;
+}
+
+#about .flex-items {
+  justify-content: space-between;
+}
+
+#about a:hover {
+  color: #eb9004;
+}
+
+
+.flex-columns .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-columns .column{
+  display:flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .column .column-1, .flex-columns .column .column-2{
+  height: 100%;
+}
+
+
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
+
+.flex-columns .column-2 p {
+  margin-top: 2px;
+  margin-bottom: 2px
+  
+
+}
+
+.flex-columns h2 {
+  font-size: 40px;
+  margin-left: 20px;
+  font-weight: 100;
+}
+
+.flex-columns h4 {
+  margin: 20px;
+}
+
+.flex-columns p {
+  margin: 20px;
+}
+
+
+.cases img:hover {
+  opacity: 0.7;
+}
+
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+
+.flex-columns.flex-reverse .row{
+  flex-direction: row-reverse;
+
+}
+
+.team img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+
+
+.callback-form {
+  width: 100%;
+  padding: 20px 0;
+
+}
+
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+.callback-form .from-control {
+  margin-bottom: 15px;
+}
+
+.callback-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: #f3f3f3 1px solid;
+}
+
+.callback-form input:focus {
+  outline-color: #28a745;
+}
+
+.callback-form .btn {
+
+    padding: 12px 0;
+    margin-top: 20px;
+}
+
+.post {
+  padding: 50px 30px;
+}
+
+.post h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: #ccc solid 1px;
+}
+
+.post meta {
+  margin-bottom: 30px;
+}
+
+.post img {
+  width: 300px;
+  border-radius: 50%;
+  display: block;
+  margin: 30px auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.footer a {
+  color: #2b82a1;
+}
+
+.footer p {
+  margin-top: 10px;
+}
+
+.footer a:hover{ 
+  color: #206179;
+}
+
+.footer .social > * {
+  margin-right: 30px;
+  transition: 0.25s;
+}
+
+@media(max-width: 768px){
+  .navbar{
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .column, .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  /*
+  .team img {
+    width: 70%;
+  }*/
+}
+
+
